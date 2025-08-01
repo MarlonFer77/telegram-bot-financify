@@ -1,5 +1,5 @@
 import datetime
-from sqlalchemy import Column, Integer, String, Float, DateTime, Date, ForeignKey
+from sqlalchemy import Column, BigInteger, Integer, String, Float, DateTime, Date, ForeignKey
 from sqlalchemy.orm import relationship
 
 from .database import Base
@@ -8,7 +8,7 @@ class User(Base):
     __tablename__ = "users"
 
     id = Column(Integer, primary_key=True, index=True)
-    telegram_id = Column(Integer, unique=True, index=True, nullable=False)
+    telegram_id = Column(BigInteger, unique=True, index=True, nullable=False)
     first_name = Column(String)
     created_at = Column(DateTime, default=datetime.datetime.now)
 
