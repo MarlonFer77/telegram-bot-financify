@@ -9,3 +9,4 @@ GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 
 # Converter o ID para inteiro
 ADMIN_TELEGRAM_ID = int(os.getenv("ADMIN_TELEGRAM_ID", 0))
+CRON_SECRET_KEY = os.getenv("CRON_SECRET_KEY")

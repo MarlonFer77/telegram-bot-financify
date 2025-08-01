@@ -1,6 +1,7 @@
 from database.database import SessionLocal
 from database import crud
 from services import gemini_service, telegram_service
+import asyncio
 
 async def analyze_users_spending():
     """
