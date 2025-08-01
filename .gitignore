@@ -1,0 +1,11 @@
+# Ambiente Virtual
+venv/
+__pycache__/
+
+# Arquivos de Sistema
+.DS_Store
+
+# Arquivos de Configuração Local
+.env
+*.db
+*.sqlite3
